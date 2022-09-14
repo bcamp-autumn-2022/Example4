@@ -10,7 +10,13 @@ namespace Example4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Student objectStudent = new Student();
+            objectStudent.SetName("Lisa Simpson");
+            Console.WriteLine("Hello "+objectStudent.GetName());
+
+            Teacher objectTeacher=new Teacher();
+            objectTeacher.Name = "Bill Jones";
+            Console.WriteLine("Your teacher is " + objectTeacher.Name);
         }
     }
 }
